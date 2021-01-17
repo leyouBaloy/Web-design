@@ -6,12 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        用户名：<input type="text" name="username"> <br>
+    <form action="xxx.php" method="get">
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"> <br>
         密码：<input type="password" name="passwd"> <br>
         <!-- 单选属性"radio"的name属性必须相同才能实现单选 -->
-        性别：男 <input type="radio" name="sex"> 女 <input type="radio" name="sex"> 人妖<input type="radio" name="sex">  <br>
-        爱好：吃饭<input type="checkbox"> 睡觉<input type="checkbox"> 打豆豆<input type="checkbox">
+        性别：男 <input type="radio" name="sex" value="男"> 女 <input type="radio" name="sex" value="女"> 人妖<input type="radio" name="sex" value="人妖">  <br>
+        爱好：吃饭<input type="checkbox" name="hobby" value="吃饭"> 睡觉<input type="checkbox" name="hobby" value="睡觉"> <br>
+        <!-- 单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中这个按钮 -->
+        打豆豆<input type="checkbox" name="hobby" value="打豆豆" checked="checked">
+        <br>
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重新填写">
+        <input type="button" value="获取短信验证码"><br>
+        上传头像<input type="file" >
     </form>
 </body>
 </html>
